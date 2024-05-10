@@ -191,7 +191,7 @@ const Manager = () => {
                                                 </div>
                                             </div>
                                         </td>
-                                        <td className='py-2 text-center border border-white'>{password.password}
+                                        <td className='py-2 text-center border border-white'>{"*".repeat(password.password.length)}
                                             <div className="flex items-center justify-center">
                                                 <div onClick={() => copyText(password.password)} className="size-7 cursor-pointer">
                                                     <img src="icons/copy.png" style={{ "width": "25px", "height": "25px", "paddingTop": "3px", "paddingLeft": "3px" }} alt="copy" />
